@@ -308,11 +308,11 @@ Entregable: sitio estático desplegable, sin backend, con datos en JSON/Markdown
 - Buscador (§7.5)
 - Identidad visual de marca aplicada en todo el sitio (§4): degradado en hero/footer, tipografía Montserrat, kickers en rosa frambuesa, tarjetas planas sin sombra.
 
-### Fase 2 — Página de selección de equipo (quiz)
-Entregable: `/elige-tu-equipo` (§7.6) — quiz corto que recomienda área(s) y termina con un botón "Postula aquí" que enlaza a `https://forms.gle/i1d78xWgfUZyPsUG6`. Sigue sin backend: las respuestas del quiz se calculan en el navegador y no se guardan en ningún lado.
-- Definir con Marketing/RR.HH. el set real de preguntas y la tabla de puntajes por área (§7.6, contenido pendiente) — si no está lista, lanzar con una versión simple (1 pregunta por pilar + 1 que cubra los departamentos) para no bloquear la fase.
-- Confirmar si el link de postulación es permanente o de una convocatoria puntual (§7.6), para decidir si conviene dejarlo hardcodeado o en un archivo de configuración fácil de cambiar.
-- Implementar la lógica de puntaje y la pantalla de resultado, reutilizando los datos de área ya cargados en la Fase 1 (§5.2).
+### Fase 2 — Página de selección de equipo (quiz) — construida
+Entregable: `/elige-tu-equipo` (§7.6) — quiz corto que recomienda área(s) y termina con un botón "Postula aquí" que enlaza a `https://forms.gle/i1d78xWgfUZyPsUG6`. Sigue sin backend: las respuestas del quiz se calculan en el navegador (`src/quiz.js`) y no se guardan en ningún lado.
+- **Construido con el set simple que el spec autoriza** (`src/quiz.js`): 1 pregunta ligada a los 3 pilares + 1 pregunta de estilo de trabajo + 1 pregunta que cubre los 7 departamentos. **Sigue pendiente** que Marketing/RR.HH./Directores definan el set real de preguntas y la tabla de puntajes — mientras eso no llegue, el quiz muestra un aviso visible ("Versión inicial del quiz — preguntas sujetas a cambio") para no presentarlo como contenido final.
+- El link de postulación quedó centralizado en una sola constante (`src/config.js`) para poder actualizarlo fácilmente apenas se confirme si es permanente o de una convocatoria puntual (§9, punto 7 — sigue sin confirmar).
+- Lógica de puntaje y pantalla de resultado implementadas (hasta 2 áreas si hay empate en el primer lugar), reutilizando los datos de área ya cargados en la Fase 1 (§5.2).
 
 ### Fase 3 — Mejoras futuras (fuera de alcance v1)
 - Vista transversal por rol (`/roles/:nivel`).

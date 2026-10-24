@@ -466,6 +466,101 @@ button {
   text-align: center;
 }
 
+/* ---------- Quiz "Elige tu equipo" ---------- */
+
+.quiz-disclaimer {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.quiz-disclaimer--light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.quiz-question h2 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+}
+
+.quiz-progress {
+  margin-bottom: 1.5rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.quiz-progress__bar {
+  margin-top: 0.4rem;
+  height: 4px;
+  background: var(--border);
+}
+
+.quiz-progress__fill {
+  height: 100%;
+  background: var(--lead-gradient);
+  transition: width 0.2s ease;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.quiz-option {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  padding: 0.9rem 1.1rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.quiz-option:hover {
+  border-color: var(--lead-purple);
+  background: #efe9fb;
+}
+
+.quiz-back {
+  margin-top: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.quiz-back:hover {
+  color: var(--lead-purple);
+}
+
+.quiz-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.quiz-actions .btn {
+  border: 2px solid var(--lead-purple);
+  color: var(--lead-purple);
+}
+
+.quiz-actions .btn--solid {
+  border: none;
+  background: var(--lead-gradient);
+  color: var(--lead-white);
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {

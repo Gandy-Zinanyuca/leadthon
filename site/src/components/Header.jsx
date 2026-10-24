@@ -4,6 +4,7 @@ const LINKS = [
   { href: "/", label: "Inicio" },
   { href: "/jerarquia", label: "Jerarquía" },
   { href: "/areas", label: "Áreas" },
+  { href: "/elige-tu-equipo", label: "Elige tu equipo" },
 ];
 
 export function Header() {

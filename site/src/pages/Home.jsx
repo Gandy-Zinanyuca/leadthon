@@ -25,7 +25,10 @@ export function Home() {
             en LEAD y cuál podría ser el siguiente para mí?
           </p>
           <div class="hero__actions">
-            <a class="btn btn--solid" href="/areas">
+            <a class="btn btn--solid" href="/elige-tu-equipo">
+              Encuentra tu equipo →
+            </a>
+            <a class="btn" href="/areas">
               Explorar las 10 áreas
             </a>
             <a class="btn" href="/jerarquia">
